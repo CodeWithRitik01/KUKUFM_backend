@@ -9,12 +9,8 @@ import { corsOptions } from "./src/constants/config.js";
 import kukuroutes from "./src/routes/kuku.routes.js"
 
 
-
 const PORT = process.env.PORT || 4000;
-// const mongoUrl = process.env.MONGODB_URL;
 
-
-// connectDB(mongoUrl);
 const app = express();
 const server = createServer(app);
 
