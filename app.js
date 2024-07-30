@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended:true}));
 
 app.use(cors(corsOptions));
 
-app.use("api/v1/kukudata",upload.none(), kukuroutes );
+app.use("/api/v1/kukudata",upload.none(), kukuroutes );
 
 
 app.get("/", (req, res) => {
