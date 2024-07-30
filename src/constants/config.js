@@ -1,5 +1,5 @@
 const corsOptions ={
-    origin: "https://kukufm-frontend.vercel.app",
+    origin: process.env.CLIENT_URL,
     credentials: true,
 }
 
