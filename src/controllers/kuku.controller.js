@@ -52,6 +52,7 @@ const getVipShows = async(req, res) =>{
         const response = await axios.get("https://d31ntp24xvh0tq.cloudfront.net/api/v2.1/home/all/?preferred_langs=hindi&page=1&lang=english")
         const data = response.data.items[4].shows
 
+        console.log(data)
         return res.status(201).json({
             success:true,
             data
